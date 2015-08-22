@@ -1,6 +1,12 @@
 FROM alpine:edge
 MAINTAINER Etopian Inc. <contact@etopian.com>
 
+LABEL devoply.type="site"
+LABEL devoply.cms="drupal"
+LABEL devoply.framework="drupal"
+LABEL devoply.language="php"
+LABEL devoply.require="mariadb etopian/nginx-proxy"
+LABEL devoply.recommend="redis"
 
 # BUILD NGINX
 ENV NGINX_VERSION nginx-1.9.3
